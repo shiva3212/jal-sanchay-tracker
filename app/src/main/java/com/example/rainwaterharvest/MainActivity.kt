@@ -352,12 +352,12 @@ fun DashboardScreen(
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
                     SavingsMiniCard(
-                        label = "Today's",
+                        label = "Today's litres saved",
                         value = "${todaySaved.toInt()} L",
                         modifier = Modifier.weight(1f)
                     )
                     SavingsMiniCard(
-                        label = "Total Overall",
+                        label = "Total Overall saved",
                         value = "${totalSaved.toInt()} L",
                         modifier = Modifier.weight(1f)
                     )
@@ -425,7 +425,7 @@ fun DashboardScreen(
 
                     Column(modifier = Modifier.weight(1f)) {
                         Text(
-                            text = "Virtual Reservoir",
+                            text = "Virtual Tank",
                             fontWeight = FontWeight.SemiBold,
                             color = Color.Gray,
                             fontSize = 14.sp
@@ -456,7 +456,7 @@ fun DashboardScreen(
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Text(
-                text = "Quick Actions",
+                text = "Actions",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF1E293B)
